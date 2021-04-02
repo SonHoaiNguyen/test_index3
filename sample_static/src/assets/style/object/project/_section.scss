@@ -1,0 +1,218 @@
+
+.main-visual{
+	position: relative;
+	margin-bottom: 97px;
+	img{
+		width: 100%;
+		height: auto;
+	}
+  .box-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #ffffff;
+    -moz-transform: translate(-103%, -20%);
+    -webkit-transform: translate(-103%, -20%);
+    transform: translate(-103%, -20%);
+    letter-spacing: 2px;
+    z-index: 2;
+    h1{
+		width: 471px;
+		height: 280px;
+		font-size: 44px;
+		padding: 41px 27px 10px 56px;
+		background-color: rgba(250, 65, 112, 0.9);
+		font-weight: bold;
+		&::before{
+			content: "";
+			position: absolute;
+			top: -102px;
+			left: -54px;
+			width: 299px;
+			height: 146px;
+			background: transparent url(../images/bf_ttl.png) no-repeat left top;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			top: 20px;
+			left: 15px;
+			width: 100%;
+			height: 100%;
+			background: transparent url(../images/after_ttl.png) repeat left top;
+			z-index: -1;
+		}
+    }
+  }
+}
+.work-content{
+	margin-bottom: 250px;
+	.l-content{
+		position: relative;
+	}
+	&-lft{
+		width: 50%;
+		padding-right: 20px;
+	}
+	&-ttl{
+		border-top: 2px solid #000000;
+		border-bottom: 2px solid #000000;
+		text-align: center;
+		padding: 15px 0 1px 0;
+		margin-bottom: 125px;
+		p{
+			width: 300px;
+			margin: 0 auto;
+			border-bottom: 1px solid #000000;
+		}
+		h2{
+			padding: 7px 0 0 0;
+			color: #2bd1cf;
+			font-size: 40px;
+			font-weight: bold;
+			letter-spacing: 2px;
+		}
+	}
+	.advison-content{
+		position: relative;
+		border: 1px solid #000000;
+		padding: 55px 57px 44px 57px;
+		text-align: center;
+		background-color: #ffffff;
+		.advison-ttl{
+			.ttl_eng{
+				position: absolute;
+				top: -104px;
+				left: 14px;
+				width: 189px;
+				height: 163px;
+			}
+			h3{
+				color: #160000;
+				display: inline-block;
+				font-size: 20px;
+				font-weight: bold;
+				padding: 0 5px 0;
+				border-bottom: 2px solid #fa4170;
+				margin-bottom: 21px;
+				letter-spacing: 1px;
+			}
+		}
+		.advison-description{
+			margin-bottom: 53px;
+			letter-spacing: 1px;
+			line-height: 2.3;
+			text-align: left;
+		}
+		.btn-link{
+			position: relative;
+			z-index: 1;
+			display: inline-block;
+			a{
+				position: relative;
+				display: inline-block;
+				font-size: 14px;
+				min-width: 220px;
+				background-color: #2bd1cf;
+				color: #ffffff;
+				padding: 22px 0 24px 0;
+				font-weight: bold;
+				text-decoration: none;
+				-moz-transition: 0.2s ease-in-out;
+				-webkit-transition: 0.2s ease-in-out;
+				transition: 0.2s ease-in-out;
+				top: 0;
+				left: 0;
+				&:hover{
+					top: 6px;
+					left: 6px;
+				}
+			}
+			&::after{
+				content: "";
+				position: absolute;
+				top: 6px;
+				left: 6px;
+				width: 100%;
+				height: 100%;
+				background: transparent url(../images/bg_link_blue.png) repeat;
+				z-index: -1;
+				border: 1px solid #2bd1cf;
+			}
+		}
+	}
+	&-rgt{
+		&__img{
+			position: absolute;
+		    top: 99px;
+    		right: 25px;
+			z-index: -1;
+			&::after{
+				content: "";
+			    top: 190px;
+    			left: 172px;
+				z-index: -1;
+				position: absolute;
+				width: 492px;
+				height: 376px;
+				background: transparent url(../images/bg_work_cnt.png) no-repeat;
+			}
+		}
+	}
+}
+.one-day{
+	background: transparent url(../images/one_day_bg.png) repeat left top;
+	&-row{
+		margin: -220px -40px 0;
+		overflow: hidden;
+		display: inline-block;
+	}
+	&-col{
+		width: 50%;
+		float: left;
+		padding: 0 40px;
+	}
+	.infor-people-wrap{
+		overflow: hidden;
+		margin-bottom: 12px;
+		.infor-people-cap{
+			width: 244px;
+			background-color: #fa4170;
+			padding: 12px 0 4px 18px;
+			margin-top: -100px;
+			float: left;
+			.infor-job{
+				font-size: 12px;
+				color: #ffffff;
+				span{
+					display: block;
+					font-weight: 600;
+				}
+			}
+			.name-txt{
+				font-size: 16px;
+				color: #ffffff;
+				font-weight: bold;
+				line-height: 1.3;
+				span{
+					font-size: 30px;
+					font-weight: bold;
+					margin-right: 5px;
+				}
+			}
+		}
+		.infor-people-img{		
+			float: right;
+			img{
+				margin-right: 35px;
+			}
+		}
+	}
+	.infor-people-des{
+	    font-size: 1.4rem;
+		letter-spacing: 2px;
+		line-height: 2;
+	}
+}

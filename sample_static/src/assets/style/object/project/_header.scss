@@ -1,0 +1,55 @@
+
+.header{
+	overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
+  &-logo {
+    float: left;
+    margin: 11px 0 0 14px;
+    p{
+      width: 213px;
+      height: 49px;
+      background: transparent url(../images/logo.png) no-repeat left top;
+      span{
+        display: block;
+        text-indent: -9999px;
+      }
+    }
+  }
+  &-menu {
+    float: right;
+    ul{
+      overflow: hidden;
+	    list-style: none;
+        li{
+          float: left;
+          a{
+            display: inline-block;
+            padding: 24px 10px 24px;
+            min-width: 130px;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: "Noto Sans CJK JP";
+            font-size: 14px;
+            text-align: center;
+          }
+          a.btn-yellow{
+            background-color: #ffffa3;
+            color: #000000;
+          }
+          a.btn-blue{
+            background-color: #00a0e9;
+          }
+          a.btn-pink{
+            background-color: #fa4170;
+          }
+        }
+    }
+  }
+}
